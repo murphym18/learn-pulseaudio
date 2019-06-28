@@ -1,6 +1,6 @@
 FLAGS =
 FLAGS += -Wall
-FLAGS += `pkg-config --libs pulse`
+FLAGS += `pkg-config --cflags --libs libpulse`
 
 main : main.c
 	gcc -o main $(FLAGS) main.c
